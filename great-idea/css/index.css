@@ -78,7 +78,8 @@ index.html page
 }
 
  header {
-	display: inline-block;
+	display: flex;
+	justify-content: space-around;
 	width: 900px;
 	background-image: linear-gradient(#008cff, white, rgba(255,0,0,0));
 	padding-bottom: 50px;
@@ -87,8 +88,6 @@ index.html page
 }
 
 header nav {
-	display: inline-block;
-	margin: 0 60px;;
 	margin-top: 35px;
 }
 
@@ -107,11 +106,12 @@ header nav a:hover {
 }
 
 section.cta {
+	display: flex;
+	justify-content: space-around;
 	margin: 35px;
 	margin-top: 150px;
 }
 section .cta-text {
-	display: inline-block;
 	margin: 0 50px;
 	text-align: center;
 }
@@ -126,14 +126,30 @@ div.cta-text button {
 	background-color: white;
 }
 
-section.main {
-	display: row;
-	padding: 200px 0 50px 0;
+div.top-content {
+	display: flex;
+	justify-content: space-around;
+	margin: 40px 0;
 }
 
-section.main * {
-	padding: 10px 0;
+div.bottom-content {
+	display: flex;
+	justify-content: space-around;
+	margin: 30px 0;
 }
+
+section.contact {
+	margin: 40px 0;
+}
+
+
+
+
+/* 
+#####################################
+product.html page
+##################################### 
+*/
 
 div.main-product {
 	margin-top: 200px;
@@ -149,14 +165,14 @@ div.main-product h2 {
     margin-bottom: 75px;
 }
 
+div.top-product {
+	display: flex;
+	flex-wrap: wrap;
+}
 div.text-product {
-    display: inline-block;
     margin: 1%;
     width: 47%;
 }
-
-
-div
 
 img.middle-img {
 	width: 100%;
@@ -164,6 +180,20 @@ img.middle-img {
 
 img.services-header-img {
 	width: 100%;
+}
+
+/* 
+#####################################
+services.html page
+##################################### 
+*/
+
+section.main {
+	padding: 200px 0 50px 0;
+}
+
+section.main * {
+	padding: 10px 0;
 }
 
 section.content {
@@ -194,15 +224,14 @@ section.content {
 
 section.facts {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	padding: 25px 0;
 }
 
 div.text-left {
-	display: flex;
-	flex-direction: column;
+	/* border: 1px solid red; */
 	width: 50%;
-	padding: 0 30px 25px 0;
+	padding: 0 10px 25px 0;
 }
 
 div.text-left ul li{
@@ -212,6 +241,7 @@ div.text-left ul li{
 
 .img-right {
 	width: 50%;
+	padding: 0 30px;
 }
 
 footer {
