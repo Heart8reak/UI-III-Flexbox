@@ -64,3 +64,191 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* 
+#####################################
+index.html page
+##################################### 
+*/
+
+.container {
+	width: 900px;
+	margin: 0 auto;
+	/* border: 1px solid red; */
+}
+
+ header {
+	display: flex;
+	justify-content: space-around;
+	width: 900px;
+	background-image: linear-gradient(#008cff, white, rgba(255,0,0,0));
+	padding-bottom: 50px;
+	position: fixed;
+	top: 0;
+}
+
+header nav {
+	margin-top: 35px;
+}
+
+header nav a {
+	text-decoration: none;
+	color: grey;
+	margin: 0 20px;
+	color: black;
+}
+
+header nav a:hover {
+	background: grey;
+	color: white;
+	transition: 0.8s;
+	padding: 5px 0;
+}
+
+section.cta {
+	display: flex;
+	justify-content: space-around;
+	margin: 35px;
+	margin-top: 150px;
+}
+section .cta-text {
+	margin: 0 50px;
+	text-align: center;
+}
+
+div.cta-text h1 {
+	font-size: 80px;
+}
+
+div.cta-text button {
+	padding: 5px 40px;
+	color: grey;
+	background-color: white;
+}
+
+div.top-content {
+	display: flex;
+	justify-content: space-around;
+	margin: 40px 0;
+}
+
+div.bottom-content {
+	display: flex;
+	justify-content: space-around;
+	margin: 30px 0;
+}
+
+section.contact {
+	margin: 40px 0;
+}
+
+
+
+
+/* 
+#####################################
+product.html page
+##################################### 
+*/
+
+div.main-product {
+	margin-top: 200px;
+}
+
+div.main-product {
+    margin: 200px 0;
+}
+
+div.main-product h2 {
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+div.top-product {
+	display: flex;
+	flex-wrap: wrap;
+}
+div.text-product {
+    margin: 1%;
+    width: 47%;
+}
+
+img.middle-img {
+	width: 100%;
+}
+
+img.services-header-img {
+	width: 100%;
+}
+
+/* 
+#####################################
+services.html page
+##################################### 
+*/
+
+section.main {
+	padding: 200px 0 50px 0;
+}
+
+section.main * {
+	padding: 10px 0;
+}
+
+section.content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.content-services {
+	flex-basis: 47%;
+	border: 1px solid black;
+	background-color: #f1f1f3;
+	padding: 25px;
+	margin: 25px 0;
+}
+
+.content-services button {
+	width: 35%;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 25px 0;
+}
+
+.content-service button a {
+	color: black;
+}
+
+section.facts {
+	display: flex;
+	justify-content: space-between;
+	padding: 25px 0;
+}
+
+div.text-left {
+	/* border: 1px solid red; */
+	width: 50%;
+	padding: 0 10px 25px 0;
+}
+
+div.text-left ul li{
+	list-style-type: square;
+	margin: 15px 20px;
+}
+
+.img-right {
+	width: 50%;
+	padding: 0 30px;
+}
+
+footer {
+	text-align: center;
+	margin: 30px 0;
+}
+
+hr {
+	border: 1px solid black;
+}
